@@ -1,0 +1,675 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(102, 102, 102);
+}
+
+.primary-icon {
+    color: rgb(209, 156, 151);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(28, 28, 28);
+    font-weight: 600;
+}
+
+.top-section {
+    display: none;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: rgb(237, 241, 255);
+    font-size: 13px;
+}
+
+.top-section a {
+    color: rgb(102, 102, 102);
+    margin: 0 5px;
+}
+
+.social-section i {
+    margin-left: 10px;
+    color: rgb(28, 28, 28);
+}
+.header-area {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.brand-logo h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.brand-logo span {
+    color: rgb(209, 156, 151);
+    border: 1px solid rgb(237, 241, 255);
+    padding: 2px 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.search-area {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid rgb(237, 241, 255);
+}
+
+.search-area input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-area button {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: rgb(209, 156, 151);
+    cursor: pointer;
+}
+.header-actions {
+    display: none;
+}
+
+.header-actions a {
+    margin-left: 15px;
+    color: rgb(28, 28, 28);
+    position: relative;
+    font-size: 18px;
+}
+
+.count-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(209, 156, 151);
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.banner-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-bottom: 40px;
+}
+
+
+/* Sidebar */
+
+.category-sidebar {
+    width: 100%;
+    border: 1px solid rgb(237, 241, 255);
+    margin-bottom: 20px;
+}
+
+.category-heading {
+    background-color: rgb(209, 156, 151);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.category-heading h3 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-items {
+    display: none;
+}
+
+.category-items li a {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(28, 28, 28);
+    border-bottom: 1px solid rgb(237, 241, 255);
+}
+
+.banner-area {
+    flex: 1;
+}
+
+.navigation-menu {
+    display: none;
+}
+
+.navigation-menu ul {
+    display: flex;
+}
+
+.navigation-menu ul li {
+    list-style: none;
+}
+
+.navigation-menu ul li a {
+    color: rgb(28, 28, 28);
+}
+
+.navigation-menu ul li a:hover,
+.navigation-menu ul li a.selected-link {
+    color: rgb(209, 156, 151);
+}
+
+.account-links a {
+    margin-left: 15px;
+    color: rgb(28, 28, 28);
+}
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.banner-caption h4 {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.banner-caption h2 {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    margin: 10px 0 20px;
+}
+
+.shop-button {
+    padding: 10px 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.benefits-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 5%;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    border: 1px solid rgb(237, 241, 255);
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.category-box {
+    width: 100%;
+    border: 1px solid rgb(237, 241, 255);
+    padding: 20px;
+    text-align: left;
+}
+
+.category-box p {
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.category-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.category-box h4 {
+    font-size: 18px;
+}
+
+.offer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.offer-box-one,
+.offer-box {
+    position: relative;
+    background-color: rgb(237, 241, 255);
+    text-align: center;
+    overflow: hidden;
+    height: 250px;
+    width: 100%;
+}
+
+.offer-box img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+#img-a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.offer-content {
+    position: relative;
+    z-index: 2;
+    padding: 50px 10px;
+    text-align: left;
+}
+
+.offer-content-one {
+    position: relative;
+    z-index: 2;
+    padding: 50px 20px;
+    text-align: right;
+}
+
+.offer-content p,
+.offer-content-one p {
+    color: rgb(209, 156, 151);
+}
+
+.offer-content h3,
+.offer-content-one h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.outline-shop-button {
+    border: 1px solid rgb(209, 156, 151);
+    color: rgb(209, 156, 151);
+    padding: 10px 20px;
+}
+
+.heading-area {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.heading-area h2 {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.heading-area::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(237, 241, 255);
+    z-index: 1;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.product-item {
+    width: 100%;
+    border: 1px solid rgb(237, 241, 255);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 15px;
+    border-bottom: 1px solid rgb(237, 241, 255);
+}
+
+.product-price {
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+}
+
+.product-price del {
+    color: rgb(102, 102, 102);
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.product-buttons a {
+    color: rgb(209, 156, 151);
+}
+.newsletter-section {
+    background-color: rgb(237, 241, 255);
+    padding: 60px 5%;
+    margin-bottom: 50px;
+}
+
+.newsletter-section .heading-area h2 {
+    background-color: rgb(237, 241, 255);
+}
+
+.newsletter-section p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 15px 30px;
+    background-color: rgb(209, 156, 151);
+    color: rgb(28, 28, 28);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.brand-vendors {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 0 5%;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.brand-vendors img {
+    height: 55px;
+    opacity: 0.5;
+    border: 0.1px solid rgb(218, 209, 209);
+    border-color: rgb(232, 227, 227);
+    filter: brightness(-50%);
+}
+
+.footer-area {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 5%;
+    background-color: rgb(237, 241, 255);
+}
+
+.footer-column h2,
+.footer-column h3 {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: rgb(102, 102, 102);
+}
+
+.footer-column form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.footer-column form button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(209, 156, 151);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo-letter {
+    color: rgb(209, 156, 151);
+    border: 1px solid rgb(237, 241, 255);
+    padding: 1px 6px;
+    background-color: rgba(219, 239, 238, 0.897);
+}
+
+
+.bottom-footer {
+    background-color:rgba(219, 239, 238, 0.897);
+    color: rgb(102, 102, 102);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+   /* MOBILE 425px */
+
+@media (min-width: 425px) {
+
+    .benefits-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefit-item {
+        width: calc(50% - 10px);
+    }
+
+}
+
+
+   /* TABLET 768px */
+
+@media (min-width: 768px) {
+
+    .search-area {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .header-actions {
+        display: block;
+    }
+
+    .banner-wrapper {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .category-sidebar {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .category-items {
+        display: block;
+    }
+
+    .navigation-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .navigation-menu ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .navigation-menu ul li a {
+        color: rgb(28, 28, 28);
+    }
+
+    .navigation-menu ul li a.selected-link,
+    .navigation-menu ul li a:hover {
+        color: rgb(209, 156, 151);
+    }
+
+    .account-links a {
+        margin-left: 15px;
+        color: rgb(28, 28, 28);
+    }
+
+    .main-banner {
+        height: 430px;
+    }
+    .benefits-section {
+        flex-wrap: nowrap;
+    }
+
+    .benefit-item {
+        width: 25%;
+    }
+    .category-box {
+        width: calc(50% - 10px);
+    }
+    .offer-box-one,
+    .offer-box {
+        width: 100%;
+    }
+    .product-item {
+        width: calc(50% - 10px);
+    }
+    .footer-area {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        width: calc(50% - 15px);
+    }
+    .brand-vendors {
+        gap: 40px;
+    }
+
+    .brand-vendors img {
+        height: 80px;
+    }
+
+}
+
+
+   /* LAPTOP 1024px */
+
+@media (min-width: 1024px) {
+
+    .top-section {
+        display: flex;
+    }
+
+    .main-banner {
+        height: 400px;
+    }
+
+    .banner-caption h2 {
+        font-size: 48px;
+    }
+    .benefits-section {
+        flex-wrap: nowrap;
+    }
+
+    .benefit-item {
+        width: 25%;
+    }
+
+    .category-box {
+        width: calc(33.333% - 14px);
+    }
+    .offer-box-one,
+    .offer-box {
+        width: calc(50% - 15px);
+    }
+    .product-item {
+        width: calc(25% - 15px);
+    }
+
+    .footer-column {
+        width: calc(25% - 22.5px);
+    }
+
+    .brand-vendors {
+        gap: 40px;
+    }
+    .brand-vendors img {
+        height: 194.5px;
+        opacity: 0.5;
+    }
+
+}
